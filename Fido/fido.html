@@ -10,18 +10,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <style>
             * {
-                margin: 0;
-                padding: 0;
-                font-size: 0;
+                margin: 0px;
+                padding: 0px;
+                font-size: 0px;
             }
             body {
                 background-color: rgb(245, 232, 220);
+                font-family: 'Roboto', sans-serif;
             }
             p {
                 font-size: 18px;
+                font-weight: 200;
+            }
+            i {
+                font-size: 18px;
+                font-weight: 200;
+            }
+            b {
+                font-size: 18px;
+                font-weight: 200;
             }
             li {
                 font-size: 18px;
+                font-weight: 200;
             }
             h1 {
                 text-align: center;
@@ -37,6 +48,7 @@
             }
             h3 {
                 font-size: 20px;
+                font-weight: 400;
             }
             article {
                 font-size: 18px;
@@ -51,6 +63,8 @@
                 text-align: center;
             }
             .bannerH1 {
+                margin: 0px;
+                padding: 0px;
                 display: inline;
                 margin-left: 2vw;
                 color: white;
@@ -64,12 +78,48 @@
                 padding: 0;
                 width: 33.3333%;
             }
+            ol {
+                position: relative;
+                left: 25%;
+                top: 60px;
+                font-size: 30px;
+            }
+            ul {
+                position: relative;
+                left: 25%;
+                top: 60px;
+                font-size: 30px;
+            }
+            li {
+                font-size: 22px;
+            }
             #logo {
                 width: 80px;
                 /*display: inline;*/
                 position: absolute;
                 left: 20px;
                 top: 5px;
+            }
+           #box {
+                width: 100%;
+                height: 500px;
+                font-size: 30px;
+            }
+            #left {
+                position: absolute;
+                width: 50%;
+                height: 300px;
+                font-size: 30px;
+            }
+            #right {
+                position: absolute;
+                right: 0;
+                width: 50%;
+                height: 300px;
+                font-size: 30px;
+            }
+            #lists {
+                display: inline;
             }
         </style>
     </head>
@@ -89,7 +139,7 @@
         
         <article>
             <h3>Dogs are smart</h3>
-            <p>Glossier actually skateboard pinterest praxis yuccie mukbang mumblecore before they sold out.
+            <p>Glossier <i>actually</i> skateboard pinterest praxis yuccie mukbang mumblecore before they sold out.
                 Pickled tote bag hammock four dollar toast, lo-fi bushwick ethical subway tile. Narwhal master
                 cleanse swag fingerstache cray pinterest viral 8-bit. Pickled gastropub fingerstache food truck.
                 Gentrify unicorn health goth chambray yes plz. Mumblecore cardigan craft beer, pabst yr readymade
@@ -97,7 +147,7 @@
                 tilde sustainable kitsch you probably haven't heard of them.
             </p><br>
             <h3>Why they do</h3>
-            <p>Deep v af 90's four dollar toast echo park. Coloring book chambray vinyl glossier selvage small
+            <p>Deep v af <b>90's</b> four dollar toast echo park. Coloring book chambray vinyl glossier selvage small
                 batch sustainable gochujang church-key roof party gluten-free. Hoodie gastropub bodega boys,
                 vinyl godard +1 marfa. Ascot hell of pop-up humblebrag. Viral master cleanse yuccie cray, pok
                 pok lyft tbh glossier polaroid irony vice fashion axe. Listicle mixtape cred, affogato mlkshk
@@ -176,18 +226,35 @@
             </p><br>
         </article>
 
-        <div>
-            <div>
+        <div id="box">
+            <div id="left">
                 <ul>
-                    <li>hei</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Good</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Good</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Good</li>
+                    <li>Food</li>
                 </ul>
             </div>
-            <div>
+            <div id="right">
                 <ol>
-                    <li>halla</li>
+                    <li>Nice</li>
+                    <li>Whole</li>
+                    <li>Perfect</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Good</li>
+                    <li>Food</li>
+                    <li>Health</li>
+                    <li>Good</li>
+                    <li>Food</li>
                 </ol>
             </div>
         </div>
-        
     </body>
 </html>
