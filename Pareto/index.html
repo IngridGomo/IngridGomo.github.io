@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <title>Pareto</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/a.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapperbody">
+        <header>
+            <div id="js-header"></div>
+        </header>
+        <!-- Bildeshow-container -->
+        <div id="slideshow_container">
+
+            <!-- slideshowet  -->
+            <div class="fade">
+                <img src="img/photoshow.png" id="slideshow" alt="Bildeslideshow" style="width:100%">
+            </div>
+
+            <!-- "Neste" og "forrige" knapper -->
+            <a class="prev" onclick="changePhoto(-1)">&#8249;</a>
+            <a class="next" onclick="changePhoto(1)">&#8250;</a>
+
+            <p id="velkommen">Linjeforeningen for samfunnsøkonomi og finansiell økonomi ved NTNU</p>
+        </div>
+
+        <footer>
+            <div id="js-footer"></div>
+        </footer>
+    </div>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/rollup.js"></script>
+    <script src="scripts/mobilnavbarknapp.js"></script>
+</body>
+
+</html>

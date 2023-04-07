@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/a.png">
+    <title>Bli medlem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div id="wrapperbody">
+
+      <header>
+        <div id="js-header"></div>
+      </header>
+
+      <div id="content">
+      <div id="medlem_grid_container">
+
+        <div id="medlem_intro_grid">
+          <h1 id="medlem_tittel">Bli medlem</h1>
+          <p>Det koster 350 kr å bli medlem, men ofte redusert pris hvis du blir medlem under fadderuka.
+              Fra andre året av vil det koste 40 kr å fornye medlemskapet sitt ett år til.
+          </p>
+        </div>
+
+        <div id="medlem_skjema_grid">
+          <form onsubmit='changeDisplay()' action="mailto:pareto.linjeforening@gmail.com?subject=Nytt%20medlem" method="POST" enctype="text/plain" target="_blank">
+            <div>
+              <header></header>
+            </div>
+
+            <div id="medlem_skjema">
+            <h3 id="medlem_form_overskrift" class="arr_h3">Meld deg inn:</h3>
+
+            <label for="fornavn" class="medlem_form_label">Fornavn:
+              <br>
+              <input type="text" name="fornavn" id="fornavn" pattern="[a-zA-Z-æøåÆØÅ]{2,70}" autofocus required class="medlem_skjema_input">
+            </label>
+            <br><br>
+
+            <label for="etternavn" class="medlem_form_label">Etternavn:
+              <br>
+              <input type="text" name="etternavn" id="etternavn" pattern="[a-zA-Z-æøåÆØÅ]{1,70}" required class="medlem_skjema_input">
+            </label>
+            <br><br>
+
+            <label for="email" class="medlem_form_label">E-mail:
+              <br>
+              <input type="email" name="email" id="email" required class="medlem_skjema_input">
+            </label>
+            <br><br>
+
+            <label for="email2" class="medlem_form_label">Gjenta e-mail:
+              <br>
+              <input type="email" name="email2" id="email2" required class="medlem_skjema_input">
+            </label>
+            <br>
+
+            <p id="medlem_skjema_info">
+              Husk at du må vippse riktig beløp til Pareto
+              før medlemsforespørselen blir godkjent. Betalingsinformasjon finner du nederst på siden.
+            </p>
+            <br>
+
+            <input type="submit" id="medlem_button" value="Send inn">
+            <p id="medlem_innsending_mottatt">Innsendingen ble mottatt.</p>
+          </div>
+
+          </form>
+        </div>
+
+        <div id="medlem_medlemsfordeler_grid">
+          <div id="medlem_medlemsfordeler">
+            <h3 class="arr_h3" id="medlem_medlemsfordeler_overskrift">Medlemsfordeler:</h3>
+            <ul id="medlem_medlemsfordeler_liste">
+              <li class="medlem_medlemsfordeler_li">Redusert pris på alle våre betalende arrangementer, turer og begivenheter.</li>
+              <li class="medlem_medlemsfordeler_li">Gratis inngang og garderobe på studio 26 hver fredag og lørdag.</li>
+              <li class="medlem_medlemsfordeler_li">Venner for livet.</li>
+            </ul>
+          </div>
+          <p id="medlem_pareto_linjeforening">PARETO LINJEFORENING</p>
+          <p id="medlem_vippsnummer_tekst">Vippsnummer</p>
+          <p id="medlem_vippsnummer_nummer">29621</p>
+          <img src="./img/pareto_vipps.png" alt="QR-kode til Pareto sin vipps" id="medlem_vipps_bilde">
+        </div>
+        </div>
+
+      </div>
+
+      <footer>
+        <div id="js-footer"></div>
+      </footer>
+    </div>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/bli_medlem.js"></script>
+    <script src="scripts/rollup.js"></script>
+    <script src="scripts/mobilnavbarknapp.js"></script>
+
+  </body>
+
+</html>
