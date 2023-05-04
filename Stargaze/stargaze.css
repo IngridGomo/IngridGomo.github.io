@@ -604,9 +604,9 @@ form {
 /******* NAV *******/
 @media only screen and (max-width: 830px) {
     #logo {
-        /* visibility: hidden; */
-        display: block;
-        margin-bottom: 50px;
+        visibility: hidden;
+        /* display: block;
+        margin-bottom: 50px; */
     }
 
     .flex-container {
