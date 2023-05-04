@@ -566,6 +566,13 @@ form {
     opacity: 1;
   }
 
+  #talkbox {
+    text-align:justify;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   /**** LANDING PAGE ****/
   @media only screen and (max-width: 750px) {
