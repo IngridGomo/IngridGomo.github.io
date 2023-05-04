@@ -389,9 +389,8 @@ h4 {
     #blanket {
         grid-row-start: 3;
         grid-column-start: 1;
-        width: 60%;
+        width: 40%;
         height: auto;
-        left: auto;
         top: auto;
         transform: translate(0,0);
     }
@@ -404,9 +403,8 @@ h4 {
     #flashlight {
         grid-row-start: 5;
         grid-column-start: 1;
-        width: 60%;
+        width: 40%;
         height: auto;
-        left: auto;
         top: auto;
         transform: translate(0,0);
         text-align:justify;
@@ -420,9 +418,8 @@ h4 {
     #binoculars {
         grid-row-start: 7;
         grid-column-start: 1;
-        width: 60%;
+        width: 40%;
         height: auto;
-        left: auto;
         top: auto;
         transform: translate(0,0);
     }
@@ -607,7 +604,13 @@ form {
 /******* NAV *******/
 @media only screen and (max-width: 830px) {
     #logo {
-        visibility: hidden;
+        /* visibility: hidden; */
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .flex-container {
+        top: 100px;
     }
 }
 
