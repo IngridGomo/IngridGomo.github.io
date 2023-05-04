@@ -60,7 +60,7 @@ h4 {
     font-size: 24px;
     margin-bottom: 20px;
     margin-top: 0;
-    color: rgb(116, 114, 70);
+    color: rgb(89, 114, 170);
 }
 
 #logo {
@@ -332,7 +332,94 @@ h4 {
 }
 
 
-/** FORM **/
+
+/***** WHAT YOU NEED *****/
+
+@media only screen and (max-width: 1000px) {
+    #blanket {
+        height: 200px;
+    }
+    
+    #flashlight {
+        height: 200px;
+    }
+    
+    #binoculars {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #grid-container-eq {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1%;
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+
+    #grid1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    #blanket {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        width: 60%;
+        height: auto;
+        left: auto;
+        top: auto;
+        transform: translate(0,0);
+    }
+    
+    #grid2 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    #flashlight {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        width: 60%;
+        height: auto;
+        left: auto;
+        top: auto;
+        transform: translate(0,0);
+        text-align:justify;
+    }
+    
+    #grid3 {
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+
+    #binoculars {
+        grid-row-start: 7;
+        grid-column-start: 1;
+        width: 60%;
+        height: auto;
+        left: auto;
+        top: auto;
+        transform: translate(0,0);
+    }
+
+    .infobox {
+        width: auto;
+        text-align:justify;
+        line-height: 1.5em;
+    }
+
+    h4 {
+        margin-top: 20%;
+    }
+}
+
+
+
+
+
+/******** FORM *******/
 
 form {
     width: 400px;
@@ -406,4 +493,33 @@ form {
     transform: scale(1);
     opacity: 1;
   }
-  
+
+
+  /**** LANDING PAGE ****/
+  @media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #text p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    #text p {
+        font-size: 15px;
+    }
+}
