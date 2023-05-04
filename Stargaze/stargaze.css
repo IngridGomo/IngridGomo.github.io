@@ -94,7 +94,7 @@ h4 {
     position: absolute;
 }
 
-#leo {
+/* #leo {
     position: absolute;
     right: 12vw;
     top: 20vh;
@@ -107,6 +107,20 @@ h4 {
     top: 64vh;
     height: 35vh;
     margin-bottom: 100px;
+} */
+
+#leo {
+    /* position: absolute;
+    right: 12vw;
+    top: 20vh; */
+    height: 35vh;
+}
+
+#sagittarius {
+    /* position: absolute;
+    left: 15vw;
+    top: 64vh; */
+    height: 35vh;
 }
 
 #blanket {
@@ -120,7 +134,7 @@ h4 {
 
 #flashlight {
     position: relative;
-    left:50%;
+    left:25%;
     top: 50%;
     transform: translate(0, -50%);
     grid-column-start: 1;
@@ -189,6 +203,15 @@ h4 {
     margin-left: 13vw;
     margin-right: 13vw;
     height: 100%;
+}
+
+#grid-container-when {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 15%;
+    grid-column-gap: 10%;
+    margin-left: 13vw;
+    margin-right: 13vw;
 }
 
 #nebula {
@@ -415,6 +438,55 @@ h4 {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    #grid-container-when {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1%;
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+
+    #grid1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    #leo {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        height: auto;
+        left: auto;
+        top: auto;
+        transform: translate(0,0);
+    }
+    
+    #grid2 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    #sagittarius {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        height: auto;
+        left: auto;
+        top: auto;
+        transform: translate(0,0);
+        text-align:justify;
+    }
+
+    .infobox {
+        width: auto;
+        text-align:justify;
+        line-height: 1.5em;
+    }
+
+    h4 {
+        margin-top: 20%;
+    }
+}
+
 
 
 
@@ -522,4 +594,33 @@ form {
     #text p {
         font-size: 15px;
     }
+}
+
+
+/******* NAV *******/
+@media only screen and (max-width: 830px) {
+    #logo {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .flex-container > a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 597px) {
+    /* her må jeg legge til ny navbar */
+}
+
+#logo {
+    position: fixed;
+}
+
+.flex-container {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
